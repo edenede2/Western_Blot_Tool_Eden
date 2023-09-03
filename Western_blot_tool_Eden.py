@@ -8,7 +8,7 @@ st.title('Western Blot Guidebook')
 
 # Sidebar menu
 st.sidebar.title('Navigation')
-menu = ['Home', 'Introduction', 'Steps', 'Calculators']
+menu = ['Home', 'Introduction', 'Protocol', 'Calculators']
 choice = st.sidebar.selectbox('Choose a section:', menu)
 
 # Home
@@ -25,7 +25,7 @@ elif choice == 'Introduction':
     """)
 
 # Steps
-elif choice == 'Steps':
+elif choice == 'Protocol':
     st.subheader('Step-by-Step Guide')
     steps = ['Sample Preparation', 'Gel Electrophoresis', 'Transfer', 'Blocking', 'Praime Antibody Incubation', 'secondery Antibody Incubation', 'Detection']
     step_choice = st.selectbox('Choose a step:', steps)
