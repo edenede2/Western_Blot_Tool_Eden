@@ -27,7 +27,7 @@ elif choice == 'Introduction':
 # Steps
 elif choice == 'Protocol':
     st.subheader('Step-by-Step Guide')
-    steps = ['Sample Preparation', 'Gel Electrophoresis', 'Transfer', 'Blocking', 'Praime Antibody Incubation', 'secondery Antibody Incubation', 'Detection']
+    steps = ['Sample Preparation', 'Gel Electrophoresis', 'Transfer', 'Blocking', 'Praime Antibody Incubation', 'Secondery Antibody Incubation', 'Detection']
     step_choice = st.selectbox('Choose a step:', steps)
     
     if step_choice == 'Sample Preparation':
