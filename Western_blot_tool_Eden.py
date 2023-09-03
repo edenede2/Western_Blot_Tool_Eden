@@ -8,7 +8,7 @@ st.title('Western Blot Guidebook')
 
 # Sidebar menu
 st.sidebar.title('Navigation')
-menu = ['Home', 'Introduction', 'Steps', 'Calculators', 'FAQ', 'Contact']
+menu = ['Home', 'Introduction', 'Steps', 'Calculators']
 choice = st.sidebar.selectbox('Choose a section:', menu)
 
 # Home
@@ -27,7 +27,7 @@ elif choice == 'Introduction':
 # Steps
 elif choice == 'Steps':
     st.subheader('Step-by-Step Guide')
-    steps = ['Sample Preparation', 'Gel Electrophoresis', 'Transfer', 'Blocking', 'Antibody Incubation', 'Detection']
+    steps = ['Sample Preparation', 'Gel Electrophoresis', 'Transfer', 'Blocking', 'Praime Antibody Incubation', 'secondery Antibody Incubation', 'Detection']
     step_choice = st.selectbox('Choose a step:', steps)
     
     if step_choice == 'Sample Preparation':
@@ -37,19 +37,9 @@ elif choice == 'Steps':
 # Calculators
 elif choice == 'Calculators':
     st.subheader('Calculators')
-    calculator_types = ['Molarity', 'Dilution', 'Running Time']
+    calculator_types = ['Bradford analysis','Molarity', 'Dilution', 'Volume']
     calculator_choice = st.selectbox('Choose a calculator:', calculator_types)
     
     if calculator_choice == 'Molarity':
         st.write('Molarity calculator will go here.')
     # Add more calculators here...
-
-# FAQ
-elif choice == 'FAQ':
-    st.subheader('Frequently Asked Questions')
-    st.write('Answers to common questions about Western Blot.')
-
-# Contact
-elif choice == 'Contact':
-    st.subheader('Contact Information')
-    st.write('For more information, please contact...')
