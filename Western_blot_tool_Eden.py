@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # App title
-st.title('Western Blot Guidebook')
+st.title('Western Blot Guidebook :brain: :rat: \n Gal's Lab')
 
 # Sidebar menu
 st.sidebar.title('Navigation')
